@@ -9,13 +9,12 @@ import "./App.css";
 function App() {
   const [config, setConfig] = useState<CabinetConfig>(DEFAULT_CONFIG);
   const [scadCode, setScadCode] = useState<string>("");
-  const [stlUrl, setStlUrl] = useState<string | null>(null);
 
   return (
     <div className="app">
       <header>
         <h1>StorageMaker</h1>
-        <p>Parametric OpenSCAD Drawer & Shelf Generator</p>
+        <p>Parametric OpenSCAD Drawer &amp; Shelf Generator</p>
       </header>
       <main>
         <aside className="sidebar">
@@ -23,11 +22,10 @@ function App() {
           <DownloadPanel
             config={config}
             onCodeGenerated={setScadCode}
-            onStlGenerated={setStlUrl}
           />
         </aside>
         <section className="content">
-          <Preview3D config={config} stlUrl={stlUrl} />
+          <Preview3D config={config} />
           {scadCode && (
             <div className="code-output">
               <h2>Generated OpenSCAD Code</h2>
