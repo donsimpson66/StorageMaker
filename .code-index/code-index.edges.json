@@ -1,0 +1,332 @@
+[
+  {
+    "type": "calls",
+    "from": "s:text:Python:api/generate.py:method:api.generate.handler.do_POST",
+    "to": "s:text:Python:api/generate.py:method:api.generate.assemble_raw"
+  },
+  {
+    "type": "calls",
+    "from": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet.assemble",
+    "to": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._cabinet_shell"
+  },
+  {
+    "type": "calls",
+    "from": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet.assemble",
+    "to": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._drawer_layout"
+  },
+  {
+    "type": "calls",
+    "from": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet.assemble",
+    "to": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._main_module"
+  },
+  {
+    "type": "calls",
+    "from": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet.assemble",
+    "to": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._parametric_header"
+  },
+  {
+    "type": "calls",
+    "from": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet.assemble",
+    "to": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._cabinet_shell"
+  },
+  {
+    "type": "calls",
+    "from": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet.assemble",
+    "to": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._drawer_layout"
+  },
+  {
+    "type": "calls",
+    "from": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet.assemble",
+    "to": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._main_module"
+  },
+  {
+    "type": "calls",
+    "from": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet.assemble",
+    "to": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._parametric_header"
+  },
+  {
+    "type": "calls",
+    "from": "s:text:TypeScript:frontend/src/api.ts:method:frontend.src.api.downloadScad",
+    "to": "s:text:TypeScript:frontend/src/api.ts:method:frontend.src.api.generateScad"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generate.py:class:api.generate.handler",
+    "to": "s:text:Python:api/generate.py:method:api.generate.handler.do_OPTIONS"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generate.py:class:api.generate.handler",
+    "to": "s:text:Python:api/generate.py:method:api.generate.handler.do_POST"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generate.py:module:api.generate",
+    "to": "s:text:Python:api/generate.py:class:api.generate.handler"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generate.py:module:api.generate",
+    "to": "s:text:Python:api/generate.py:method:api.generate.assemble_raw"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/cabinet.py:module:api.generator.cabinet",
+    "to": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._cabinet_shell"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/cabinet.py:module:api.generator.cabinet",
+    "to": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._drawer_layout"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/cabinet.py:module:api.generator.cabinet",
+    "to": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._main_module"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/cabinet.py:module:api.generator.cabinet",
+    "to": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._parametric_header"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/cabinet.py:module:api.generator.cabinet",
+    "to": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet.assemble"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/drawer.py:module:api.generator.drawer",
+    "to": "s:text:Python:api/generator/drawer.py:method:api.generator.drawer.generate_drawer"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/supports.py:module:api.generator.supports",
+    "to": "s:text:Python:api/generator/supports.py:method:api.generator.supports.generate_circles"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/supports.py:module:api.generator.supports",
+    "to": "s:text:Python:api/generator/supports.py:method:api.generator.supports.generate_honeycomb"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/supports.py:module:api.generator.supports",
+    "to": "s:text:Python:api/generator/supports.py:method:api.generator.supports.generate_linear"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/supports.py:module:api.generator.supports",
+    "to": "s:text:Python:api/generator/supports.py:method:api.generator.supports.generate_squares"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/supports.py:module:api.generator.supports",
+    "to": "s:text:Python:api/generator/supports.py:method:api.generator.supports.generate_x_brace"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/generator/supports.py:module:api.generator.supports",
+    "to": "s:text:Python:api/generator/supports.py:method:api.generator.supports.get_support_module_name"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/health.py:class:api.health.handler",
+    "to": "s:text:Python:api/health.py:method:api.health.handler.do_GET"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:api/health.py:module:api.health",
+    "to": "s:text:Python:api/health.py:class:api.health.handler"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/cabinet.py:module:backend.app.generator.cabinet",
+    "to": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._cabinet_shell"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/cabinet.py:module:backend.app.generator.cabinet",
+    "to": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._drawer_layout"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/cabinet.py:module:backend.app.generator.cabinet",
+    "to": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._main_module"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/cabinet.py:module:backend.app.generator.cabinet",
+    "to": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._parametric_header"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/cabinet.py:module:backend.app.generator.cabinet",
+    "to": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet.assemble"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/drawer.py:module:backend.app.generator.drawer",
+    "to": "s:text:Python:backend/app/generator/drawer.py:method:backend.app.generator.drawer.generate_drawer"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/supports.py:module:backend.app.generator.supports",
+    "to": "s:text:Python:backend/app/generator/supports.py:method:backend.app.generator.supports.generate_circles"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/supports.py:module:backend.app.generator.supports",
+    "to": "s:text:Python:backend/app/generator/supports.py:method:backend.app.generator.supports.generate_honeycomb"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/supports.py:module:backend.app.generator.supports",
+    "to": "s:text:Python:backend/app/generator/supports.py:method:backend.app.generator.supports.generate_linear"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/supports.py:module:backend.app.generator.supports",
+    "to": "s:text:Python:backend/app/generator/supports.py:method:backend.app.generator.supports.generate_squares"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/supports.py:module:backend.app.generator.supports",
+    "to": "s:text:Python:backend/app/generator/supports.py:method:backend.app.generator.supports.generate_x_brace"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/generator/supports.py:module:backend.app.generator.supports",
+    "to": "s:text:Python:backend/app/generator/supports.py:method:backend.app.generator.supports.get_support_module_name"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/main.py:module:backend.app.main",
+    "to": "s:text:Python:backend/app/main.py:method:backend.app.main.health"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/models.py:module:backend.app.models",
+    "to": "s:text:Python:backend/app/models.py:class:backend.app.models.CabinetConfig"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/models.py:module:backend.app.models",
+    "to": "s:text:Python:backend/app/models.py:class:backend.app.models.GenerateResponse"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/routes/generate.py:module:backend.app.routes.generate",
+    "to": "s:text:Python:backend/app/routes/generate.py:method:backend.app.routes.generate.download_scad"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/routes/generate.py:module:backend.app.routes.generate",
+    "to": "s:text:Python:backend/app/routes/generate.py:method:backend.app.routes.generate.generate_scad"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:Python:backend/app/routes/generate.py:module:backend.app.routes.generate",
+    "to": "s:text:Python:backend/app/routes/generate.py:method:backend.app.routes.generate.preview_stl"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/api.ts:module:frontend.src.api",
+    "to": "s:text:TypeScript:frontend/src/api.ts:method:frontend.src.api.downloadScad"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/api.ts:module:frontend.src.api",
+    "to": "s:text:TypeScript:frontend/src/api.ts:method:frontend.src.api.generateScad"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.back_panel"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.depth"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.drawer_clearance"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.drawer_sizes"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.drawers_x"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.drawers_y"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.height"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.output_mode"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.support_thickness"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.support_type"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.wall_thickness"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.CabinetConfig.width"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.GenerateResponse",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.GenerateResponse.filename"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.GenerateResponse",
+    "to": "s:text:TypeScript:frontend/src/types.ts:field:frontend.src.types.GenerateResponse.scad_code"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:module:frontend.src.types",
+    "to": "s:text:TypeScript:frontend/src/types.ts:class:frontend.src.types.OutputMode"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:module:frontend.src.types",
+    "to": "s:text:TypeScript:frontend/src/types.ts:class:frontend.src.types.SupportType"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:module:frontend.src.types",
+    "to": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.CabinetConfig"
+  },
+  {
+    "type": "contains",
+    "from": "s:text:TypeScript:frontend/src/types.ts:module:frontend.src.types",
+    "to": "s:text:TypeScript:frontend/src/types.ts:interface:frontend.src.types.GenerateResponse"
+  }
+]

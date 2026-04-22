@@ -1,0 +1,122 @@
+[
+  {
+    "targetSymbolId": "s:text:Python:api/generate.py:method:api.generate.assemble_raw",
+    "sourceSymbolId": "s:text:Python:api/generate.py:method:api.generate.handler.do_POST",
+    "fileId": "f:api/generate.py",
+    "range": {
+      "startLine": 23,
+      "startColumn": 21,
+      "endLine": 23,
+      "endColumn": 32
+    },
+    "lineText": "scad_code = assemble_raw(body)"
+  },
+  {
+    "targetSymbolId": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._cabinet_shell",
+    "sourceSymbolId": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet.assemble",
+    "fileId": "f:api/generator/cabinet.py",
+    "range": {
+      "startLine": 30,
+      "startColumn": 18,
+      "endLine": 30,
+      "endColumn": 31
+    },
+    "lineText": "parts.append(_cabinet_shell(c, parametric))"
+  },
+  {
+    "targetSymbolId": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._drawer_layout",
+    "sourceSymbolId": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet.assemble",
+    "fileId": "f:api/generator/cabinet.py",
+    "range": {
+      "startLine": 33,
+      "startColumn": 18,
+      "endLine": 33,
+      "endColumn": 31
+    },
+    "lineText": "parts.append(_drawer_layout(c, parametric))"
+  },
+  {
+    "targetSymbolId": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._main_module",
+    "sourceSymbolId": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet.assemble",
+    "fileId": "f:api/generator/cabinet.py",
+    "range": {
+      "startLine": 36,
+      "startColumn": 18,
+      "endLine": 36,
+      "endColumn": 29
+    },
+    "lineText": "parts.append(_main_module(c, parametric))"
+  },
+  {
+    "targetSymbolId": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet._parametric_header",
+    "sourceSymbolId": "s:text:Python:api/generator/cabinet.py:method:api.generator.cabinet.assemble",
+    "fileId": "f:api/generator/cabinet.py",
+    "range": {
+      "startLine": 17,
+      "startColumn": 22,
+      "endLine": 17,
+      "endColumn": 39
+    },
+    "lineText": "parts.append(_parametric_header(c))"
+  },
+  {
+    "targetSymbolId": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._cabinet_shell",
+    "sourceSymbolId": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet.assemble",
+    "fileId": "f:backend/app/generator/cabinet.py",
+    "range": {
+      "startLine": 30,
+      "startColumn": 18,
+      "endLine": 30,
+      "endColumn": 31
+    },
+    "lineText": "parts.append(_cabinet_shell(c, parametric))"
+  },
+  {
+    "targetSymbolId": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._drawer_layout",
+    "sourceSymbolId": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet.assemble",
+    "fileId": "f:backend/app/generator/cabinet.py",
+    "range": {
+      "startLine": 33,
+      "startColumn": 18,
+      "endLine": 33,
+      "endColumn": 31
+    },
+    "lineText": "parts.append(_drawer_layout(c, parametric))"
+  },
+  {
+    "targetSymbolId": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._main_module",
+    "sourceSymbolId": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet.assemble",
+    "fileId": "f:backend/app/generator/cabinet.py",
+    "range": {
+      "startLine": 36,
+      "startColumn": 18,
+      "endLine": 36,
+      "endColumn": 29
+    },
+    "lineText": "parts.append(_main_module(c, parametric))"
+  },
+  {
+    "targetSymbolId": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet._parametric_header",
+    "sourceSymbolId": "s:text:Python:backend/app/generator/cabinet.py:method:backend.app.generator.cabinet.assemble",
+    "fileId": "f:backend/app/generator/cabinet.py",
+    "range": {
+      "startLine": 17,
+      "startColumn": 22,
+      "endLine": 17,
+      "endColumn": 39
+    },
+    "lineText": "parts.append(_parametric_header(c))"
+  },
+  {
+    "targetSymbolId": "s:text:TypeScript:frontend/src/api.ts:method:frontend.src.api.generateScad",
+    "sourceSymbolId": "s:text:TypeScript:frontend/src/api.ts:method:frontend.src.api.downloadScad",
+    "fileId": "f:frontend/src/api.ts",
+    "range": {
+      "startLine": 16,
+      "startColumn": 21,
+      "endLine": 16,
+      "endColumn": 32
+    },
+    "lineText": "const res = await generateScad(config);"
+  }
+]

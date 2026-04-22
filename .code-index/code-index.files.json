@@ -1,0 +1,146 @@
+[
+  {
+    "id": "f:api/generate.py",
+    "path": "api/generate.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:aa917fcb76ad77664f0fed1909e8f04451cd8511808ccc4c28a7c18555e06821",
+    "summary": "Python source file generate.py in StorageMaker."
+  },
+  {
+    "id": "f:api/generator/__init__.py",
+    "path": "api/generator/__init__.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "summary": "Python source file __init__.py in StorageMaker."
+  },
+  {
+    "id": "f:api/generator/cabinet.py",
+    "path": "api/generator/cabinet.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:dc157aa3771632f2cb2db45c7311a4a2c16ee0787b9d5a881b12e0c1b20e1164",
+    "summary": "Python source file cabinet.py in StorageMaker."
+  },
+  {
+    "id": "f:api/generator/drawer.py",
+    "path": "api/generator/drawer.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:2b0a5e8fa4b782e0ca0a85f284285188236fc4f178e7e11d91fefc1d765e18d7",
+    "summary": "Python source file drawer.py in StorageMaker."
+  },
+  {
+    "id": "f:api/generator/supports.py",
+    "path": "api/generator/supports.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:68c6d4d1f0e282cc09f8ad2424805fd031c6f447080e330004a780dd9a3e8924",
+    "summary": "Python source file supports.py in StorageMaker."
+  },
+  {
+    "id": "f:api/health.py",
+    "path": "api/health.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:8a80fdaf77038855623fac6bd9a1ce0b216f0d3990fd4ac82fd86e81f8920b38",
+    "summary": "Python source file health.py in StorageMaker."
+  },
+  {
+    "id": "f:backend/app/__init__.py",
+    "path": "backend/app/__init__.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "summary": "Python source file __init__.py in StorageMaker."
+  },
+  {
+    "id": "f:backend/app/generator/__init__.py",
+    "path": "backend/app/generator/__init__.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "summary": "Python source file __init__.py in StorageMaker."
+  },
+  {
+    "id": "f:backend/app/generator/cabinet.py",
+    "path": "backend/app/generator/cabinet.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:dc157aa3771632f2cb2db45c7311a4a2c16ee0787b9d5a881b12e0c1b20e1164",
+    "summary": "Python source file cabinet.py in StorageMaker."
+  },
+  {
+    "id": "f:backend/app/generator/drawer.py",
+    "path": "backend/app/generator/drawer.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:2b0a5e8fa4b782e0ca0a85f284285188236fc4f178e7e11d91fefc1d765e18d7",
+    "summary": "Python source file drawer.py in StorageMaker."
+  },
+  {
+    "id": "f:backend/app/generator/supports.py",
+    "path": "backend/app/generator/supports.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:68c6d4d1f0e282cc09f8ad2424805fd031c6f447080e330004a780dd9a3e8924",
+    "summary": "Python source file supports.py in StorageMaker."
+  },
+  {
+    "id": "f:backend/app/main.py",
+    "path": "backend/app/main.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:2a1f4cc7e0709e64b43c6b7a08e041c404dbca949e2827a4444d75f6d6a1d8c1",
+    "summary": "Python source file main.py in StorageMaker."
+  },
+  {
+    "id": "f:backend/app/models.py",
+    "path": "backend/app/models.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:41d9aaa5e125d3ae655e4c677cceca21702134bf0981f1b47b199b8106352d5b",
+    "summary": "Python source file models.py in StorageMaker."
+  },
+  {
+    "id": "f:backend/app/routes/__init__.py",
+    "path": "backend/app/routes/__init__.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "summary": "Python source file __init__.py in StorageMaker."
+  },
+  {
+    "id": "f:backend/app/routes/generate.py",
+    "path": "backend/app/routes/generate.py",
+    "projectName": "StorageMaker",
+    "language": "Python",
+    "hash": "sha256:a49781fbac562bbc3536f3708560aa5a515288a027cb9b3abb907217542ec853",
+    "summary": "Python source file generate.py in StorageMaker."
+  },
+  {
+    "id": "f:frontend/src/api.ts",
+    "path": "frontend/src/api.ts",
+    "projectName": "StorageMaker",
+    "language": "TypeScript",
+    "hash": "sha256:1dfd3cae7fccfd5bd59d7a7b059a6c6f11c4b1b6997a95b10a611248e25b7f3c",
+    "summary": "TypeScript source file api.ts in StorageMaker."
+  },
+  {
+    "id": "f:frontend/src/types.ts",
+    "path": "frontend/src/types.ts",
+    "projectName": "StorageMaker",
+    "language": "TypeScript",
+    "hash": "sha256:72932f42370a8835e3621393f66a56179f2deada9a54bcde096eb7e739569bf1",
+    "summary": "TypeScript source file types.ts in StorageMaker."
+  },
+  {
+    "id": "f:frontend/vite.config.ts",
+    "path": "frontend/vite.config.ts",
+    "projectName": "StorageMaker",
+    "language": "TypeScript",
+    "hash": "sha256:2c93f8d234cc9658d0e977623106c8d6189d8e94968466f7d12e36b7ae44daa0",
+    "summary": "TypeScript source file vite.config.ts in StorageMaker."
+  }
+]
