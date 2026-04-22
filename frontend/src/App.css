@@ -186,18 +186,28 @@ main {
   min-height: 400px;
 }
 
-.preview-placeholder {
+.preview-overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid rgba(108, 99, 255, 0.28);
+  border-radius: 8px;
+  background: rgba(15, 15, 26, 0.82);
   color: var(--text-muted);
+  backdrop-filter: blur(6px);
+  pointer-events: none;
 }
 
-.preview-placeholder .hint {
+.preview-overlay p:first-child {
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.preview-overlay .hint {
   font-size: 0.8rem;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 }
 
 .code-output {

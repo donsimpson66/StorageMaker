@@ -59,30 +59,27 @@ module_name = "{get_support_module_name(c.support_type)}";"""
 def _cabinet_shell(c, parametric: bool) -> str:
     if parametric:
         return """module cabinet_shell() {
-  difference() {
-    cube([width, height, depth]);
-    translate([wall, wall, wall])
-      cube([width - 2 * wall, height - 2 * wall, depth - wall + 1]);
+  union() {
+    cube([width, wall, depth]);
+    translate([0, height - wall, 0])
+      cube([width, wall, depth]);
+    translate([0, wall, 0])
+      cube([wall, height - 2 * wall, depth]);
+    translate([width - wall, wall, 0])
+      cube([wall, height - 2 * wall, depth]);
   }
-  // side walls with support pattern
-  // left
-  translate([0, wall, wall])
-    rotate([0, -90, 0])
-    linear_extrude(wall)
-    square([depth - 2 * wall, height - 2 * wall]);
-  // right
-  translate([width, wall, wall])
-    rotate([0, -90, 0])
-    linear_extrude(wall)
-    square([depth - 2 * wall, height - 2 * wall]);
 }"""
     else:
         w, h, d, wall = c.width, c.height, c.depth, c.wall_thickness
         return f"""module cabinet_shell() {{
-  difference() {{
-    cube([{w}, {h}, {d}]);
-    translate([{wall}, {wall}, {wall}])
-      cube([{w - 2 * wall}, {h - 2 * wall}, {d - wall + 1}]);
+  union() {{
+    cube([{w}, {wall}, {d}]);
+    translate([0, {h - wall}, 0])
+      cube([{w}, {wall}, {d}]);
+    translate([0, {wall}, 0])
+      cube([{wall}, {h - 2 * wall}, {d}]);
+    translate([{w - wall}, {wall}, 0])
+      cube([{wall}, {h - 2 * wall}, {d}]);
   }}
 }}"""
 
@@ -92,12 +89,13 @@ def _drawer_layout(c, parametric: bool) -> str:
         return """module drawer_layout() {
   cell_w = (width - 2 * wall - (drawers_x + 1) * clearance) / drawers_x;
   cell_h = (height - 2 * wall - (drawers_y + 1) * clearance) / drawers_y;
+  drawer_d = depth - clearance - (back_panel ? wall : 0);
   for (ix = [0 : drawers_x - 1]) {
     for (iy = [0 : drawers_y - 1]) {
       x = wall + clearance + ix * (cell_w + clearance);
       y = wall + clearance + iy * (cell_h + clearance);
-      translate([x, y, wall + clearance])
-        cube([cell_w, cell_h, depth - 2 * wall - clearance]);
+      translate([x, y, clearance])
+        cube([cell_w, cell_h, drawer_d]);
     }
   }
 }"""
@@ -107,13 +105,14 @@ def _drawer_layout(c, parametric: bool) -> str:
         dx, dy = c.drawers_x, c.drawers_y
         cell_w = (w - 2 * wall - (dx + 1) * cl) / dx
         cell_h = (h - 2 * wall - (dy + 1) * cl) / dy
+        drawer_d = d - cl - (wall if c.back_panel else 0)
         return f"""module drawer_layout() {{
   for (ix = [0 : {dx - 1}]) {{
     for (iy = [0 : {dy - 1}]) {{
       x = {wall} + {cl} + ix * ({cell_w} + {cl});
       y = {wall} + {cl} + iy * ({cell_h} + {cl});
-      translate([x, y, {wall + cl}])
-        cube([{cell_w}, {cell_h}, {d - 2 * wall - cl}]);
+      translate([x, y, {cl}])
+        cube([{cell_w}, {cell_h}, {drawer_d}]);
     }}
   }}
 }}"""
