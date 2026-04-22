@@ -61,6 +61,36 @@ main {
   background: var(--surface);
 }
 
+.tab-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.tab-button:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.tab-button.active {
+  border-color: var(--accent);
+  background: rgba(108, 99, 255, 0.18);
+  color: var(--text);
+}
+
 .content {
   flex: 1;
   display: flex;
@@ -131,6 +161,14 @@ main {
   border-top: 1px solid var(--border);
 }
 
+.download-panel h2 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
 .button-row {
   display: flex;
   flex-direction: column;
@@ -172,6 +210,41 @@ main {
   color: var(--error);
   font-size: 0.8rem;
   margin-top: 0.5rem;
+}
+
+.derived-card {
+  padding: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.accent-card {
+  border-color: rgba(108, 99, 255, 0.35);
+  background: rgba(108, 99, 255, 0.08);
+}
+
+.derived-card p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+}
+
+.derived-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+}
+
+.derived-grid span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.derived-grid strong {
+  font-size: 0.88rem;
+  color: var(--text);
 }
 
 .preview-container {

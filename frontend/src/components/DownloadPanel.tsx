@@ -1,13 +1,22 @@
 import { useState } from "react";
-import type { CabinetConfig } from "../types";
-import { downloadScad, generateScad } from "../api";
 
 interface Props {
-  config: CabinetConfig;
+  title: string;
+  generateLabel?: string;
+  downloadLabel?: string;
+  onGenerate: () => Promise<string>;
+  onDownload: () => Promise<void>;
   onCodeGenerated: (code: string) => void;
 }
 
-export default function DownloadPanel({ config, onCodeGenerated }: Props) {
+export default function DownloadPanel({
+  title,
+  generateLabel = "Generate .scad Code",
+  downloadLabel = "Download .scad",
+  onGenerate,
+  onDownload,
+  onCodeGenerated,
+}: Props) {
   const [loading, setLoading] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -15,8 +24,8 @@ export default function DownloadPanel({ config, onCodeGenerated }: Props) {
     setLoading("generate");
     setError(null);
     try {
-      const res = await generateScad(config);
-      onCodeGenerated(res.scad_code);
+      const code = await onGenerate();
+      onCodeGenerated(code);
     } catch (e: unknown) {
       setError(e instanceof Error ? e.message : "Generation failed");
     } finally {
@@ -28,7 +37,7 @@ export default function DownloadPanel({ config, onCodeGenerated }: Props) {
     setLoading("scad");
     setError(null);
     try {
-      await downloadScad(config);
+      await onDownload();
     } catch (e: unknown) {
       setError(e instanceof Error ? e.message : "Download failed");
     } finally {
@@ -38,12 +47,13 @@ export default function DownloadPanel({ config, onCodeGenerated }: Props) {
 
   return (
     <div className="download-panel">
+      <h2>{title}</h2>
       <div className="button-row">
         <button onClick={handleGenerate} disabled={!!loading}>
-          {loading === "generate" ? "Generating..." : "Generate .scad Code"}
+          {loading === "generate" ? "Generating..." : generateLabel}
         </button>
         <button onClick={handleDownloadScad} disabled={!!loading}>
-          {loading === "scad" ? "Downloading..." : "Download .scad"}
+          {loading === "scad" ? "Downloading..." : downloadLabel}
         </button>
       </div>
       {error && <p className="error">{error}</p>}

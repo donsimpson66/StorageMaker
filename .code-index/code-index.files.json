@@ -20,7 +20,7 @@
     "path": "api/generator/cabinet.py",
     "projectName": "StorageMaker",
     "language": "Python",
-    "hash": "sha256:dc157aa3771632f2cb2db45c7311a4a2c16ee0787b9d5a881b12e0c1b20e1164",
+    "hash": "sha256:33b0431a8a1b3c6a6782612b0a73582922552d3ab548ccb7568c202ceba3533e",
     "summary": "Python source file cabinet.py in StorageMaker."
   },
   {
@@ -68,7 +68,7 @@
     "path": "backend/app/generator/cabinet.py",
     "projectName": "StorageMaker",
     "language": "Python",
-    "hash": "sha256:dc157aa3771632f2cb2db45c7311a4a2c16ee0787b9d5a881b12e0c1b20e1164",
+    "hash": "sha256:33b0431a8a1b3c6a6782612b0a73582922552d3ab548ccb7568c202ceba3533e",
     "summary": "Python source file cabinet.py in StorageMaker."
   },
   {
@@ -116,7 +116,7 @@
     "path": "backend/app/routes/generate.py",
     "projectName": "StorageMaker",
     "language": "Python",
-    "hash": "sha256:a49781fbac562bbc3536f3708560aa5a515288a027cb9b3abb907217542ec853",
+    "hash": "sha256:9a8909d9713bcbb951ad1952986b350cd3e7c51880fbc431d7a5265f001d923d",
     "summary": "Python source file generate.py in StorageMaker."
   },
   {

@@ -226,11 +226,6 @@
   },
   {
     "type": "contains",
-    "from": "s:text:Python:backend/app/routes/generate.py:module:backend.app.routes.generate",
-    "to": "s:text:Python:backend/app/routes/generate.py:method:backend.app.routes.generate.preview_stl"
-  },
-  {
-    "type": "contains",
     "from": "s:text:TypeScript:frontend/src/api.ts:module:frontend.src.api",
     "to": "s:text:TypeScript:frontend/src/api.ts:method:frontend.src.api.downloadScad"
   },

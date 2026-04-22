@@ -174,9 +174,9 @@
     "kind": "method",
     "fileId": "f:api/generator/cabinet.py",
     "range": {
-      "startLine": 90,
+      "startLine": 87,
       "startColumn": 5,
-      "endLine": 90,
+      "endLine": 87,
       "endColumn": 18
     },
     "signature": "method api.generator.cabinet._drawer_layout",
@@ -195,9 +195,9 @@
     "kind": "method",
     "fileId": "f:api/generator/cabinet.py",
     "range": {
-      "startLine": 122,
+      "startLine": 121,
       "startColumn": 5,
-      "endLine": 122,
+      "endLine": 121,
       "endColumn": 16
     },
     "signature": "method api.generator.cabinet._main_module",
@@ -594,9 +594,9 @@
     "kind": "method",
     "fileId": "f:backend/app/generator/cabinet.py",
     "range": {
-      "startLine": 90,
+      "startLine": 87,
       "startColumn": 5,
-      "endLine": 90,
+      "endLine": 87,
       "endColumn": 18
     },
     "signature": "method backend.app.generator.cabinet._drawer_layout",
@@ -615,9 +615,9 @@
     "kind": "method",
     "fileId": "f:backend/app/generator/cabinet.py",
     "range": {
-      "startLine": 122,
+      "startLine": 121,
       "startColumn": 5,
-      "endLine": 122,
+      "endLine": 121,
       "endColumn": 16
     },
     "signature": "method backend.app.generator.cabinet._main_module",
@@ -1014,9 +1014,9 @@
     "kind": "method",
     "fileId": "f:backend/app/routes/generate.py",
     "range": {
-      "startLine": 25,
+      "startLine": 23,
       "startColumn": 5,
-      "endLine": 25,
+      "endLine": 23,
       "endColumn": 17
     },
     "signature": "method backend.app.routes.generate.download_scad",
@@ -1035,34 +1035,13 @@
     "kind": "method",
     "fileId": "f:backend/app/routes/generate.py",
     "range": {
-      "startLine": 15,
+      "startLine": 13,
       "startColumn": 5,
-      "endLine": 15,
+      "endLine": 13,
       "endColumn": 17
     },
     "signature": "method backend.app.routes.generate.generate_scad",
     "summary": "method generate_scad in Python source.",
-    "parentId": "s:text:Python:backend/app/routes/generate.py:module:backend.app.routes.generate",
-    "accessibility": "public",
-    "isStatic": false,
-    "isAbstract": false,
-    "isVirtual": false,
-    "isOverride": false
-  },
-  {
-    "id": "s:text:Python:backend/app/routes/generate.py:method:backend.app.routes.generate.preview_stl",
-    "name": "preview_stl",
-    "qualifiedName": "backend.app.routes.generate.preview_stl",
-    "kind": "method",
-    "fileId": "f:backend/app/routes/generate.py",
-    "range": {
-      "startLine": 41,
-      "startColumn": 5,
-      "endLine": 41,
-      "endColumn": 15
-    },
-    "signature": "method backend.app.routes.generate.preview_stl",
-    "summary": "method preview_stl in Python source.",
     "parentId": "s:text:Python:backend/app/routes/generate.py:module:backend.app.routes.generate",
     "accessibility": "public",
     "isStatic": false,
