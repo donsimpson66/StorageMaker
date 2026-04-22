@@ -19,40 +19,29 @@ export function buildInsertConfig(
 
 export function calculateInsertDimensions(config: DrawerInsertConfig) {
   const sectionWidth = Math.max(
-    (config.cabinet_width
-      - 2 * config.cabinet_wall_thickness
-      - (config.drawers_x + 1) * config.drawer_clearance)
-      / config.drawers_x,
+    config.cabinet_width / config.drawers_x,
     1
   );
   const sectionHeight = Math.max(
-    (config.cabinet_height
-      - 2 * config.cabinet_wall_thickness
-      - (config.drawers_y + 1) * config.drawer_clearance)
-      / config.drawers_y,
+    config.cabinet_height / config.drawers_y,
     1
   );
-  const sectionDepth = Math.max(
-    config.cabinet_depth
-      - config.drawer_clearance
-      - (config.back_panel ? config.cabinet_wall_thickness : 0),
-    1
-  );
+  const sectionDepth = Math.max(config.cabinet_depth, 1);
 
   return {
     sectionWidth,
     sectionHeight,
     sectionDepth,
     insertWidth: Math.max(
-      sectionWidth - 2 * config.fit_clearance,
+      sectionWidth - config.fit_clearance,
       config.insert_wall_thickness * 2 + 1
     ),
     insertHeight: Math.max(
-      sectionHeight - 2 * config.fit_clearance,
+      sectionHeight - config.fit_clearance,
       config.insert_wall_thickness * 2 + 1
     ),
     insertDepth: Math.max(
-      sectionDepth - 2 * config.fit_clearance,
+      sectionDepth - config.fit_clearance,
       config.floor_thickness + 1
     ),
   };

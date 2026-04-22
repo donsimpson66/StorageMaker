@@ -24,13 +24,13 @@ floor_thickness = {c.floor_thickness};
 compartments_x = {c.compartments_x};
 compartments_y = {c.compartments_y};
 
-section_width = (cabinet_width - 2 * cabinet_wall - (drawers_x + 1) * drawer_clearance) / drawers_x;
-section_height = (cabinet_height - 2 * cabinet_wall - (drawers_y + 1) * drawer_clearance) / drawers_y;
-section_depth = cabinet_depth - drawer_clearance - (back_panel ? cabinet_wall : 0);
+section_width = cabinet_width / drawers_x;
+section_height = cabinet_height / drawers_y;
+section_depth = cabinet_depth;
 
-insert_width = max(section_width - 2 * fit_clearance, insert_wall * 2 + 1);
-insert_height = max(section_height - 2 * fit_clearance, insert_wall * 2 + 1);
-insert_depth = max(section_depth - 2 * fit_clearance, floor_thickness + 1);
+insert_width = max(section_width - fit_clearance, insert_wall * 2 + 1);
+insert_height = max(section_height - fit_clearance, insert_wall * 2 + 1);
+insert_depth = max(section_depth - fit_clearance, floor_thickness + 1);
 
 module drawer_insert() {{
   difference() {{
@@ -69,32 +69,19 @@ drawer_insert();
 
 
 def _resolved_insert(c) -> str:
-    section_width = _safe_dimension(
-        (c.cabinet_width - 2 * c.cabinet_wall_thickness - (c.drawers_x + 1) * c.drawer_clearance)
-        / c.drawers_x,
-        1,
-    )
-    section_height = _safe_dimension(
-        (c.cabinet_height - 2 * c.cabinet_wall_thickness - (c.drawers_y + 1) * c.drawer_clearance)
-        / c.drawers_y,
-        1,
-    )
-    section_depth = _safe_dimension(
-        c.cabinet_depth
-        - c.drawer_clearance
-        - (c.cabinet_wall_thickness if c.back_panel else 0),
-        1,
-    )
+    section_width = _safe_dimension(c.cabinet_width / c.drawers_x, 1)
+    section_height = _safe_dimension(c.cabinet_height / c.drawers_y, 1)
+    section_depth = _safe_dimension(c.cabinet_depth, 1)
     insert_width = _safe_dimension(
-        section_width - 2 * c.fit_clearance,
+        section_width - c.fit_clearance,
         c.insert_wall_thickness * 2 + 1,
     )
     insert_height = _safe_dimension(
-        section_height - 2 * c.fit_clearance,
+        section_height - c.fit_clearance,
         c.insert_wall_thickness * 2 + 1,
     )
     insert_depth = _safe_dimension(
-        section_depth - 2 * c.fit_clearance,
+        section_depth - c.fit_clearance,
         c.floor_thickness + 1,
     )
     inner_width = _safe_dimension(insert_width - 2 * c.insert_wall_thickness, 1)
