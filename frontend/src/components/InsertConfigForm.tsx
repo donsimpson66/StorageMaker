@@ -32,26 +32,6 @@ export default function InsertConfigForm({ config, options, onChange }: Props) {
       <h2>Insert Layout</h2>
       <div className="form-grid">
         <label>
-          Compartments Across
-          <input
-            type="number"
-            min={1}
-            max={10}
-            value={options.compartments_x}
-            onChange={(e) => update({ compartments_x: +e.target.value })}
-          />
-        </label>
-        <label>
-          Compartments Down
-          <input
-            type="number"
-            min={1}
-            max={10}
-            value={options.compartments_y}
-            onChange={(e) => update({ compartments_y: +e.target.value })}
-          />
-        </label>
-        <label>
           Fit Clearance (mm)
           <input
             type="number"

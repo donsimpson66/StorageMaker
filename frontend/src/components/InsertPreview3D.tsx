@@ -54,7 +54,6 @@ export default function InsertPreview3D({ config }: Props) {
     scene.add(grid);
 
     const insertMaterial = new THREE.MeshStandardMaterial({ color: 0x8ecae6 });
-    const dividerMaterial = new THREE.MeshStandardMaterial({ color: 0x219ebc });
 
     const addBox = (
       width: number,
@@ -76,27 +75,28 @@ export default function InsertPreview3D({ config }: Props) {
     const wall = config.insert_wall_thickness;
     const floor = config.floor_thickness;
     const innerWidth = Math.max(dimensions.insertWidth - 2 * wall, 1);
-    const innerHeight = Math.max(dimensions.insertHeight - 2 * wall, 1);
-    const dividerDepth = Math.max(dimensions.insertDepth - floor, 1);
 
-    addBox(dimensions.insertWidth, wall, dimensions.insertDepth, 0, 0, 0, insertMaterial);
-    addBox(dimensions.insertWidth, wall, dimensions.insertDepth, 0, dimensions.insertHeight - wall, 0, insertMaterial);
-    addBox(wall, innerHeight, dimensions.insertDepth, 0, wall, 0, insertMaterial);
-    addBox(wall, innerHeight, dimensions.insertDepth, dimensions.insertWidth - wall, wall, 0, insertMaterial);
-    addBox(dimensions.insertWidth, dimensions.insertHeight, floor, 0, 0, 0, insertMaterial);
-
-    const cellWidth = innerWidth / config.compartments_x;
-    const cellHeight = innerHeight / config.compartments_y;
-
-    for (let ix = 1; ix < config.compartments_x; ix += 1) {
-      const x = wall + ix * cellWidth - wall / 2;
-      addBox(wall, innerHeight, dividerDepth, x, wall, floor, dividerMaterial);
-    }
-
-    for (let iy = 1; iy < config.compartments_y; iy += 1) {
-      const y = wall + iy * cellHeight - wall / 2;
-      addBox(innerWidth, wall, dividerDepth, wall, y, floor, dividerMaterial);
-    }
+    addBox(dimensions.insertWidth, floor, dimensions.insertDepth, 0, 0, 0, insertMaterial);
+    addBox(wall, dimensions.insertHeight, dimensions.insertDepth, 0, 0, 0, insertMaterial);
+    addBox(
+      wall,
+      dimensions.insertHeight,
+      dimensions.insertDepth,
+      dimensions.insertWidth - wall,
+      0,
+      0,
+      insertMaterial
+    );
+    addBox(innerWidth, dimensions.insertHeight, wall, wall, 0, 0, insertMaterial);
+    addBox(
+      innerWidth,
+      dimensions.insertHeight,
+      wall,
+      wall,
+      0,
+      dimensions.insertDepth - wall,
+      insertMaterial
+    );
 
     insertGroup.position.set(
       -dimensions.insertWidth / 2,
@@ -105,7 +105,7 @@ export default function InsertPreview3D({ config }: Props) {
     );
 
     camera.position.set(maxDimension * 1.5, maxDimension * 1.05, maxDimension * 1.5);
-    controls.target.set(0, 0, dimensions.insertDepth * 0.15);
+    controls.target.set(0, dimensions.insertHeight * 0.3, 0);
     controls.update();
 
     const animate = () => {
@@ -138,7 +138,6 @@ export default function InsertPreview3D({ config }: Props) {
         gridMaterial.dispose();
       }
       insertMaterial.dispose();
-      dividerMaterial.dispose();
       controls.dispose();
       renderer.dispose();
       container.removeChild(renderer.domElement);
